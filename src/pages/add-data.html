@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../vendor/materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">OPALUS</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="/">REPORT</a>
+                </li>
+                <li>
+                    <a href="report.html">NEW REPORT</a>
+                </li>
+                <li>
+                    <a href="add-data.html">ADD DATA</a>
+                </li>
+                <li>
+                    <a href="">UPLOAD DATA</a>
+                </li>
+                <li>
+                    <a href="">LOGOUT</a>
+                </li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li>
+                    <a href="">REPORT</a>
+                </li>
+                <li>
+                    <a href="report.html">NEW REPORT</a>
+                </li>
+                <li>
+                    <a href="">ADD DATA</a>
+                </li>
+                <li>
+                    <a href="">UPLOAD DATA</a>
+                </li>
+                <li>
+                    <a href="">LOGOUT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col s12">
+            <ul class="tabs">
+                <li class="tab col s2">
+                    <a class="active" href="#test1">Add Scheme</a>
+                </li>
+                <li class="tab col s2">
+                    <a href="#test2">Add Contractor</a>
+                </li>
+                <li class="tab col s2">
+                    <a href="#test3">Add Activity</a>
+                </li>
+                <li class="tab col s2">
+                    <a href="#test4">Add Operative</a>
+                </li>
+                <li class="tab col s2">
+                    <a href="#test5">Add Material</a>
+                </li>
+                <li class="tab col s2">
+                    <a href="#test6">Add Plants</a>
+                </li>
+            </ul>
+        </div>
+        <div id="test1" class="col s12">
+            <br>
+            <br>
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">spellcheck</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">Enter Scheme</label>
+                </div>
+                <a class="btn-floating btn-medium waves-effect waves-light red">
+                    <i class="material-icons">add</i>
+                </a>
+            </div>
+
+            <table class="highlight centered responsive-table">
+                <thead>
+                    <tr>
+                        <th>Scheme ID</th>
+                        <th>Scheme</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="test66" />
+                            <label for="test66">1</label>
+                        </td>
+                        <td>
+                            <input type="text" value=" Westfield Stratford - M7" style="width:40%" class="validate">
+                        </td>
+                        <td>
+                            <a class="btn-floating btn-medium waves-effect waves-light red">
+                                <i class="material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="test67" />
+                            <label for="test67">2</label>
+                        </td>
+                        <td>
+                            <input type="text" value=" Westfield Stratford - M7" style="width:40%" class="validate">
+                        </td>
+                        <td>
+                            <a class="btn-floating btn-medium waves-effect waves-light red">
+                                <i class="material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="test68" />
+                            <label for="test68">3</label>
+                        </td>
+                        <td>
+                            <input type="text" value=" Westfield Stratford - M7" style="width:40%" class="validate">
+                        </td>
+                        <td>
+                            <a class="btn-floating btn-medium waves-effect waves-light red">
+                                <i class="material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <div class="row">
+                <button class="btn waves-effect waves-light red" type="submit" name="action">Update
+                    <i class="material-icons right">update</i>
+                </button>
+            </div>
+
+        </div>
+        <div id="test2" class="col s12">Test 2</div>
+        <div id="test3" class="col s12">Test 3</div>
+        <div id="test4" class="col s12">Test 4</div>
+        <div id="test5" class="col s12">Test 5</div>
+        <div id="test6" class="col s12">Test 6</div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../vendor/materialize/js/materialize.min.js"></script>
+    <script src="../js/opalus-sitediaries.min.js"></script>
+</body>
+
+</html>
