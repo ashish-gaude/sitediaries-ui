@@ -30,7 +30,7 @@
                     <a href="add-data.html">ADD DATA</a>
                 </li>
                 <li>
-                    <a href="">UPLOAD DATA</a>
+                    <a href="upload-data.html">UPLOAD DATA</a>
                 </li>
                 <li>
                     <a href="">LOGOUT</a>
@@ -44,10 +44,10 @@
                     <a href="report.html">NEW REPORT</a>
                 </li>
                 <li>
-                    <a href="">ADD DATA</a>
+                    <a href="add-data.html">ADD DATA</a>
                 </li>
                 <li>
-                    <a href="">UPLOAD DATA</a>
+                    <a href="upload-data.html">UPLOAD DATA</a>
                 </li>
                 <li>
                     <a href="">LOGOUT</a>
@@ -55,112 +55,485 @@
             </ul>
         </div>
     </nav>
-
+    <br>
+    <br>
     <div class="row">
-        <div class="col s12">
-            <ul class="tabs">
-                <li class="tab col s2">
-                    <a class="active" href="#test1">Add Scheme</a>
-                </li>
-                <li class="tab col s2">
-                    <a href="#test2">Add Contractor</a>
-                </li>
-                <li class="tab col s2">
-                    <a href="#test3">Add Activity</a>
-                </li>
-                <li class="tab col s2">
-                    <a href="#test4">Add Operative</a>
-                </li>
-                <li class="tab col s2">
-                    <a href="#test5">Add Material</a>
-                </li>
-                <li class="tab col s2">
-                    <a href="#test6">Add Plants</a>
-                </li>
-            </ul>
-        </div>
-        <div id="test1" class="col s12">
-            <br>
-            <br>
-            <div class="row">
-                <div class="input-field col s6">
-                    <i class="material-icons prefix">spellcheck</i>
-                    <input id="icon_prefix" type="text" class="validate">
-                    <label for="icon_prefix">Enter Scheme</label>
+        <div class="col s2"></div>
+        <div class="col s8">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s2">
+                        <a class="active" href="#test1">Add Scheme</a>
+                    </li>
+                    <li class="tab col s2">
+                        <a href="#test2">Add Contractor</a>
+                    </li>
+                    <li class="tab col s2">
+                        <a href="#test3">Add Activity</a>
+                    </li>
+                    <li class="tab col s2">
+                        <a href="#test4">Add Operative</a>
+                    </li>
+                    <li class="tab col s2">
+                        <a href="#test5">Add Material</a>
+                    </li>
+                    <li class="tab col s2">
+                        <a href="#test6">Add Plants</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="test1" class="col s12">
+                <br>
+                <br>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">spellcheck</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Enter Scheme</label>
+                    </div>
+                    <a class="btn-floating btn-medium waves-effect waves-light red">
+                        <i class="material-icons">add</i>
+                    </a>
                 </div>
-                <a class="btn-floating btn-medium waves-effect waves-light red">
+
+                <table class="highlight centered responsive-table">
+                    <thead>
+                        <tr>
+                            <th>Scheme ID</th>
+                            <th>Scheme</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="test66" />
+                                <label for="test66">1</label>
+                            </td>
+                            <td>
+                                <input type="text" value=" Westfield Stratford - M7" style="width:40%" class="validate">
+                            </td>
+                            <td>
+                                <a class="btn-floating btn-medium waves-effect waves-light red">
+                                    <i class="material-icons">delete</i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="test67" />
+                                <label for="test67">2</label>
+                            </td>
+                            <td>
+                                <input type="text" value=" Westfield Stratford - M7" style="width:40%" class="validate">
+                            </td>
+                            <td>
+                                <a class="btn-floating btn-medium waves-effect waves-light red">
+                                    <i class="material-icons">delete</i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="test68" />
+                                <label for="test68">3</label>
+                            </td>
+                            <td>
+                                <input type="text" value=" Westfield Stratford - M7" style="width:40%" class="validate">
+                            </td>
+                            <td>
+                                <a class="btn-floating btn-medium waves-effect waves-light red">
+                                    <i class="material-icons">delete</i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <div class="row">
+                    <button class="btn waves-effect waves-light red" type="submit" name="action">Update
+                        <i class="material-icons right">update</i>
+                    </button>
+                </div>
+
+            </div>
+            <div id="test2" class="col s12">
+                <br>
+                <br>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">spellcheck</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Enter Contractor Name</label>
+                    </div>
+                    <a class="btn-floating btn-medium waves-effect waves-light red">
+                        <i class="material-icons">add</i>
+                    </a>
+                </div>
+
+                <table class="highlight centered responsive-table">
+                    <thead>
+                        <tr>
+                            <th>Contractor ID</th>
+                            <th>Contractor Name</th>
+                            <th>Scheme ID</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="test66" />
+                                <label for="test66">9</label>
+                            </td>
+                            <td>
+                                <input type="text" value="Careys Internal" style="width:40%" class="validate">
+                            </td>
+                            <td>
+                                <input type="text" value="1" style="width:40%" class="validate">
+                            </td>
+                            <td>
+                                <a class="btn-floating btn-medium waves-effect waves-light red">
+                                    <i class="material-icons">delete</i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="test67" />
+                                <label for="test67">10</label>
+                            </td>
+                            <td>
+                                <input type="text" value="Piling Contractor" style="width:40%" class="validate">
+                            </td>
+                            <td>
+                                <input type="text" value="1" style="width:40%" class="validate">
+                            </td>
+                            <td>
+                                <a class="btn-floating btn-medium waves-effect waves-light red">
+                                    <i class="material-icons">delete</i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <div class="row">
+                    <button class="btn waves-effect waves-light red" type="submit" name="action">Update
+                        <i class="material-icons right">update</i>
+                    </button>
+                </div>
+            </div>
+            <div id="test3" class="col s12">
+                <br>
+                <br>
+                <div class="row">
+                    <div class="input-field col s3">
+                        <select>
+                            <option value="" disabled selected>-SELECT CONTRACT-</option>
+                            <option value="1">Westfield Stratford - M7</option>
+                        </select>
+                        <label>Contractor Name</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <a class="waves-effect waves-light btn red">Show</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <select>
+                            <option value="" disabled selected>-SELECT PHASE-</option>
+                            <option value="1">Phase 1 -Mobilisation and Site Set-up</option>
+                            <option value="2">Phase 2 - Prep. Sheet Piles</option>
+                            <option value="3">Phase 3 - Sheet Piling and 1st Level Bulk Excavation</option>
+                            <option value="4">Phase 4 - Install Anchors (by others) and Bulk Excavation</option>
+                            <option value="5">Phase 5 - Final excavation</option>
+                            <option value="6">Phase 6 - Contract completion and reinstatement</option>
+                        </select>
+                        <label>Phase</label>
+                    </div>
+                    <div class="input-field col s1">
+                        <a class="waves-effect waves-light btn red">Show</a>
+                    </div>
+                    <div class="input-field col s2">
+                        <a class="waves-effect waves-light btn red">
+                            <i class="material-icons right">delete_forever</i>Delete All</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Enter Phase</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Activity Description</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Activity Reference</label>
+                    </div>
+                </div>
+                <a class="btn-floating btn-medium waves-effect waves-light right red">
                     <i class="material-icons">add</i>
                 </a>
             </div>
+            <div id="test4" class="col s12">
+                <br>
+                <br>
+                <div class="row">
+                    <div class="input-field col s3">
+                        <select>
+                            <option value="" disabled selected>-SELECT CONTRACT-</option>
+                            <option value="1">Careys Internal</option>
+                            <option value="1">Piling Contractor</option>
+                        </select>
+                        <label>Contractor Name</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <a class="waves-effect waves-light btn red">Show</a>
+                    </div>
+                    <div class="input-field col s5">
+                        <i class="material-icons prefix">spellcheck</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Operative Name</label>
+                    </div>
+                    <a class="btn-floating btn-medium waves-effect waves-light red">
+                        <i class="material-icons">add</i>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col s3">
+                    </div>
+                    <div class="col s6">
+                        <table class="highlight responsive-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Item Name</th>
+                                </tr>
+                            </thead>
 
-            <table class="highlight centered responsive-table">
-                <thead>
-                    <tr>
-                        <th>Scheme ID</th>
-                        <th>Scheme</th>
-                        <th></th>
-                    </tr>
-                </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="test76" />
+                                        <label for="test76">Adrian Petcu</label>
+                                    </td>
+                                    <td>
+                                        <a class="btn-floating btn-medium waves-effect waves-light red">
+                                            <i class="material-icons">delete</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="test77" />
+                                        <label for="test77">Daniel Marita</label>
+                                    </td>
+                                    <td>
+                                        <a class="btn-floating btn-medium waves-effect waves-light red">
+                                            <i class="material-icons">delete</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="test78" />
+                                        <label for="test78">David Masson</label>
+                                    </td>
+                                    <td>
+                                        <a class="btn-floating btn-medium waves-effect waves-light red">
+                                            <i class="material-icons">delete</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="test76" />
+                                        <label for="test76">Dragos Pantiru</label>
+                                    </td>
+                                    <td>
+                                        <a class="btn-floating btn-medium waves-effect waves-light red">
+                                            <i class="material-icons">delete</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="test77" />
+                                        <label for="test77">Eduard Maxim</label>
+                                    </td>
+                                    <td>
+                                        <a class="btn-floating btn-medium waves-effect waves-light red">
+                                            <i class="material-icons">delete</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="test78" />
+                                        <label for="test78">Gheorghe Dragomir</label>
+                                    </td>
+                                    <td>
+                                        <a class="btn-floating btn-medium waves-effect waves-light red">
+                                            <i class="material-icons">delete</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                <tbody>
-                    <tr>
-                        <td>
-                            <input type="checkbox" id="test66" />
-                            <label for="test66">1</label>
-                        </td>
-                        <td>
-                            <input type="text" value=" Westfield Stratford - M7" style="width:40%" class="validate">
-                        </td>
-                        <td>
-                            <a class="btn-floating btn-medium waves-effect waves-light red">
-                                <i class="material-icons">delete</i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" id="test67" />
-                            <label for="test67">2</label>
-                        </td>
-                        <td>
-                            <input type="text" value=" Westfield Stratford - M7" style="width:40%" class="validate">
-                        </td>
-                        <td>
-                            <a class="btn-floating btn-medium waves-effect waves-light red">
-                                <i class="material-icons">delete</i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" id="test68" />
-                            <label for="test68">3</label>
-                        </td>
-                        <td>
-                            <input type="text" value=" Westfield Stratford - M7" style="width:40%" class="validate">
-                        </td>
-                        <td>
-                            <a class="btn-floating btn-medium waves-effect waves-light red">
-                                <i class="material-icons">delete</i>
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-            <br>
-            <div class="row">
-                <button class="btn waves-effect waves-light red" type="submit" name="action">Update
-                    <i class="material-icons right">update</i>
-                </button>
+                    </div>
+                    <div class="col s3">
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn waves-effect waves-light red" type="submit" name="action">Update
+                        <i class="material-icons right">update</i>
+                    </button>
+                </div>
             </div>
+            <div id="test5" class="col s12">
+                <br>
+                <br>
+                <div class="row">
+                    <div class="input-field col s3">
+                        <select>
+                            <option value="" disabled selected>-SELECT CONTRACT-</option>
+                            <option value="1">Careys Internal</option>
+                            <option value="1">Piling Contractor</option>
+                        </select>
+                        <label>Contractor Name</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <a class="waves-effect waves-light btn red">Show</a>
+                    </div>
+                </div>
+            </div>
+            <div id="test6" class="col s12">
+                <br>
+                <br>
+                <div class="row">
+                    <div class="input-field col s3">
+                        <select>
+                            <option value="" disabled selected>-SELECT CONTRACT-</option>
+                            <option value="1">Careys Internal</option>
+                            <option value="1">Piling Contractor</option>
+                        </select>
+                        <label>Contractor Name</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <a class="waves-effect waves-light btn red">Show</a>
+                    </div>
+                    <div class="input-field col s5">
+                        <i class="material-icons prefix">spellcheck</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Plant Name</label>
+                    </div>
+                    <a class="btn-floating btn-medium waves-effect waves-light red">
+                        <i class="material-icons">add</i>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col s3">
+                    </div>
+                    <div class="col s6">
+                        <table class="highlight responsive-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Item Name</th>
+                                </tr>
+                            </thead>
 
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="test76" />
+                                        <label for="test76">Level</label>
+                                    </td>
+                                    <td>
+                                        <a class="btn-floating btn-medium waves-effect waves-light red">
+                                            <i class="material-icons">delete</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="test77" />
+                                        <label for="test77">Rotating Laser</label>
+                                    </td>
+                                    <td>
+                                        <a class="btn-floating btn-medium waves-effect waves-light red">
+                                            <i class="material-icons">delete</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="test78" />
+                                        <label for="test78">EDM (Robotic Total Station</label>
+                                    </td>
+                                    <td>
+                                        <a class="btn-floating btn-medium waves-effect waves-light red">
+                                            <i class="material-icons">delete</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="test76" />
+                                        <label for="test76">Mobile Crane</label>
+                                    </td>
+                                    <td>
+                                        <a class="btn-floating btn-medium waves-effect waves-light red">
+                                            <i class="material-icons">delete</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="test77" />
+                                        <label for="test77">Crawler Crane</label>
+                                    </td>
+                                    <td>
+                                        <a class="btn-floating btn-medium waves-effect waves-light red">
+                                            <i class="material-icons">delete</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="test78" />
+                                        <label for="test78">Static Concrete Pump</label>
+                                    </td>
+                                    <td>
+                                        <a class="btn-floating btn-medium waves-effect waves-light red">
+                                            <i class="material-icons">delete</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col s3">
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn waves-effect waves-light red" type="submit" name="action">Update
+                        <i class="material-icons right">update</i>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div id="test2" class="col s12">Test 2</div>
-        <div id="test3" class="col s12">Test 3</div>
-        <div id="test4" class="col s12">Test 4</div>
-        <div id="test5" class="col s12">Test 5</div>
-        <div id="test6" class="col s12">Test 6</div>
+        <div class="col s2"></div>
     </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

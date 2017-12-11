@@ -30,7 +30,7 @@
                     <a href="add-data.html">ADD DATA</a>
                 </li>
                 <li>
-                    <a href="">UPLOAD DATA</a>
+                    <a href="upload-data.html">UPLOAD DATA</a>
                 </li>
                 <li>
                     <a href="">LOGOUT</a>
@@ -44,10 +44,10 @@
                     <a href="report.html">NEW REPORT</a>
                 </li>
                 <li>
-                    <a href="">ADD DATA</a>
+                    <a href="add-data.html">ADD DATA</a>
                 </li>
                 <li>
-                    <a href="">UPLOAD DATA</a>
+                    <a href="upload-data.html">UPLOAD DATA</a>
                 </li>
                 <li>
                     <a href="">LOGOUT</a>
@@ -58,248 +58,252 @@
     <br>
     <br>
     <div class="row">
-        <form class="col s12">
-            <div class="row">
-                <div class="input-field col s6">
-                    <select>
-                        <option value="" disabled selected>-SELECT SCHEME-</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                    </select>
-                    <label>Contract</label>
-                </div>
-
-                <div class="input-field col s6">
-                    <select>
-                        <option value="" disabled selected>-SELECT CONTRACTOR-</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                    </select>
-                    <label> Sub-Contrator's Name</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="switch">
-                    <label>
-                        DRPDW
-                        <input type="checkbox">
-                        <span class="lever"></span>
-                        KBD
-                    </label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s4">
-                    <select>
-                        <option value="" disabled selected>-SELECT SECTION-</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                    </select>
-                    <label>Section</label>
-                </div>
-                <div class="input-field col s4">
-                    <select>
-                        <option value="" disabled selected>-SELECT SECTION FIRST-</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                    </select>
-                    <label>Actiity Description</label>
-                </div>
-                <div class="input-field col s4">
-                    <select>
-                        <option value="" disabled selected>-SELECT ACTIVITY DESCRIPTION FIRST-</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                    </select>
-                    <label>Activity Reference</label>
-                </div>
-            </div>
-
-            <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <i class="material-icons prefix">location_on</i>
-                            <input id="icon_prefix" type="text" class="validate">
-                            <label for="icon_prefix">Location - Chainage From</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <i class="material-icons prefix">location_on</i>
-                            <input id="icon_telephone" type="tel" class="validate">
-                            <label for="icon_telephone">Location - Chainage To</label>
-                        </div>
+        <div class="col s2"></div>
+        <div class="col s8">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <select>
+                            <option value="" disabled selected>-SELECT SCHEME-</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Contract</label>
                     </div>
-                </form>
-            </div>
 
-            <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <i class="material-icons prefix">opacity</i>
-                            <input id="icon_prefix" type="text" class="validate">
-                            <label for="icon_prefix">Completion Quantity</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <i class="material-icons prefix">format_underlined</i>
-                            <input id="icon_telephone" type="tel" class="validate">
-                            <label for="icon_telephone">Completion Unit</label>
-                        </div>
+                    <div class="input-field col s6">
+                        <select>
+                            <option value="" disabled selected>-SELECT CONTRACTOR-</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label> Sub-Contrator's Name</label>
                     </div>
-                </form>
-            </div>
-
-            <div class="row">
-                <div class="input-field col s4">
-                    <select>
-                        <option value="" disabled selected>-SELECT SCHEME FIRST-</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                    </select>
-                    <label>Operative Name</label>
                 </div>
-                <div class="input-field col s4">
-                    <select>
-                        <option value="" disabled selected>-SELECT TRADE-</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                    </select>
-                    <label>Operative Trade</label>
-                </div>
-                <div class="input-field col s4">
-                    <i class="material-icons prefix">access_time</i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Hours</label>
-                </div>
-            </div>
-
-            <div class="row right-align">
-                <a class="btn-floating btn-medium waves-effect waves-light red">
-                    <i class="material-icons">add</i>
-                </a>
-                <a class="btn-floating btn-medium waves-effect waves-light red">
-                    <i class="material-icons">delete</i>
-                </a>
-            </div>
-
-            <div class="row">
-                <div class="input-field col s4">
-                    <select>
-                        <option value="" disabled selected>-SELECT SCHEME FIRST-</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                    </select>
-                    <label>Plant</label>
-                </div>
-                <div class="input-field col s4">
-                    <i class="material-icons prefix">access_time</i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Hours</label>
-                </div>
-            </div>
-
-            <div class="row right-align">
-                <a class="btn-floating btn-medium waves-effect waves-light red">
-                    <i class="material-icons">add</i>
-                </a>
-                <a class="btn-floating btn-medium waves-effect waves-light red">
-                    <i class="material-icons">delete</i>
-                </a>
-            </div>
-
-            <div class="row">
-                <div class="input-field col s4">
-                    <select>
-                        <option value="" disabled selected>-SELECT SCHEME FIRST-</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                    </select>
-                    <label>Material</label>
-                </div>
-                <div class="input-field col s4">
-                    <i class="material-icons prefix">opacity</i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Quantity</label>
-                </div>
-                <div class="input-field col s4">
-                    <select>
-                        <option value="" disabled selected>-SELECT UNIT-</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                    </select>
-                    <label>Units</label>
-                </div>
-            </div>
-
-            <div class="row right-align">
-                <a class="btn-floating btn-medium waves-effect waves-light red">
-                    <i class="material-icons">add</i>
-                </a>
-                <a class="btn-floating btn-medium waves-effect waves-light red">
-                    <i class="material-icons">delete</i>
-                </a>
-            </div>
-
-            <!-- <form action="#"> -->
-            <div class="file-field input-field">
-                <div class="btn red">
-                    <span>Upload Image</span>
-                    <input type="file">
-                </div>
-                <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text">
-                </div>
-            </div>
-            <!-- </form> -->
-
-            <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <textarea id="textarea1" class="materialize-textarea"></textarea>
-                            <label for="textarea1">Comment</label>
-                        </div>
+                <div class="row">
+                    <div class="switch">
+                        <label>
+                            DRPDW
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                            KBD
+                        </label>
                     </div>
-                </form>
-            </div>
-
-            <div class="row">
-                <div class="input-field col s4">
-                    <input id="date1" type="text" class="datepicker">
-                    <label for="date1">Date</label>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <select>
+                            <option value="" disabled selected>-SELECT SECTION-</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Section</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <select>
+                            <option value="" disabled selected>-SELECT SECTION FIRST-</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Actiity Description</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <select>
+                            <option value="" disabled selected>-SELECT ACTIVITY DESCRIPTION FIRST-</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Activity Reference</label>
+                    </div>
                 </div>
 
-                <div class="input-field col s4 right-align">
-                    <select>
-                        <option value="" disabled selected>-SELECT WEATHER-</option>
-                        <option value="1">Light Shower</option>
-                        <option value="2">Heavy Rain</option>
-                        <option value="3">Snow</option>
-                        <option value="1">Dry and Sunny</option>
-                        <option value="2">Windy</option>
-                        <option value="3">Misty/Fog</option>
-                    </select>
-                    <label>Weather</label>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">location_on</i>
+                                <input id="icon_prefix" type="text" class="validate">
+                                <label for="icon_prefix">Location - Chainage From</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">location_on</i>
+                                <input id="icon_telephone" type="tel" class="validate">
+                                <label for="icon_telephone">Location - Chainage To</label>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </div>
 
-            <div class="row right-align">
-                <button class="btn waves-effect waves-light red" type="submit" name="action">Submit
-                    <i class="material-icons right">send</i>
-                </button>
-            </div>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">opacity</i>
+                                <input id="icon_prefix" type="text" class="validate">
+                                <label for="icon_prefix">Completion Quantity</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">format_underlined</i>
+                                <input id="icon_telephone" type="tel" class="validate">
+                                <label for="icon_telephone">Completion Unit</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
-        </form>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <select>
+                            <option value="" disabled selected>-SELECT SCHEME FIRST-</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Operative Name</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <select>
+                            <option value="" disabled selected>-SELECT TRADE-</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Operative Trade</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">access_time</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Hours</label>
+                    </div>
+                </div>
+
+                <div class="row right-align">
+                    <a class="btn-floating btn-medium waves-effect waves-light red">
+                        <i class="material-icons">add</i>
+                    </a>
+                    <a class="btn-floating btn-medium waves-effect waves-light red">
+                        <i class="material-icons">delete</i>
+                    </a>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s4">
+                        <select>
+                            <option value="" disabled selected>-SELECT SCHEME FIRST-</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Plant</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">access_time</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Hours</label>
+                    </div>
+                </div>
+
+                <div class="row right-align">
+                    <a class="btn-floating btn-medium waves-effect waves-light red">
+                        <i class="material-icons">add</i>
+                    </a>
+                    <a class="btn-floating btn-medium waves-effect waves-light red">
+                        <i class="material-icons">delete</i>
+                    </a>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s4">
+                        <select>
+                            <option value="" disabled selected>-SELECT SCHEME FIRST-</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Material</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">opacity</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Quantity</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <select>
+                            <option value="" disabled selected>-SELECT UNIT-</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Units</label>
+                    </div>
+                </div>
+
+                <div class="row right-align">
+                    <a class="btn-floating btn-medium waves-effect waves-light red">
+                        <i class="material-icons">add</i>
+                    </a>
+                    <a class="btn-floating btn-medium waves-effect waves-light red">
+                        <i class="material-icons">delete</i>
+                    </a>
+                </div>
+
+                <!-- <form action="#"> -->
+                <div class="file-field input-field">
+                    <div class="btn red">
+                        <span>Upload Image</span>
+                        <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                    </div>
+                </div>
+                <!-- </form> -->
+
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Comment</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input id="date1" type="text" class="datepicker">
+                        <label for="date1">Date</label>
+                    </div>
+
+                    <div class="input-field col s4 right-align">
+                        <select>
+                            <option value="" disabled selected>-SELECT WEATHER-</option>
+                            <option value="1">Light Shower</option>
+                            <option value="2">Heavy Rain</option>
+                            <option value="3">Snow</option>
+                            <option value="1">Dry and Sunny</option>
+                            <option value="2">Windy</option>
+                            <option value="3">Misty/Fog</option>
+                        </select>
+                        <label>Weather</label>
+                    </div>
+                </div>
+
+                <div class="row right-align">
+                    <button class="btn waves-effect waves-light red" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+        <div class="col s2"></div>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="../vendor/materialize/js/materialize.min.js"></script>
