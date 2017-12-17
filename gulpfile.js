@@ -17,7 +17,7 @@ var banner = ['/*!\n',
 ].join('');
 
 // Compiles SCSS files from /scss into /css
-gulp.task('sass', function() {
+gulp.task('sass', function () {
   return gulp.src('src/scss/opalus-sitediaries.scss')
     .pipe(sass())
     .pipe(header(banner, {
@@ -30,7 +30,7 @@ gulp.task('sass', function() {
 });
 
 // Minify compiled CSS
-gulp.task('minify-css', ['sass'], function() {
+gulp.task('minify-css', ['sass'], function () {
   return gulp.src('src/css/opalus-sitediaries.css')
     .pipe(cleanCSS({
       compatibility: 'ie8'
@@ -45,7 +45,7 @@ gulp.task('minify-css', ['sass'], function() {
 });
 
 // Minify custom JS
-gulp.task('minify-js', function() {
+gulp.task('minify-js', function () {
   return gulp.src('src/js/opalus-sitediaries.js')
     .pipe(uglify())
     .pipe(header(banner, {
@@ -62,21 +62,58 @@ gulp.task('minify-js', function() {
 
 // Copy vendor files from /node_modules into /vendor
 // NOTE: requires `npm install` before running!
-gulp.task('copy', function() {
+gulp.task('copy', function () {
   gulp.src([
-      'node_modules/materialize-css/dist/**/*',
-      '!**/npm.js',
-      '!**/bootstrap-theme.*',
-      '!**/*.map'
-    ])
+    'node_modules/materialize-css/dist/**/*',
+    '!**/npm.js',
+    '!**/bootstrap-theme.*',
+    '!**/*.map',
+    '!**/*.css'
+  ])
     .pipe(gulp.dest('src/vendor/materialize'))
 })
 
+
+gulp.task('sass-mat', function () {
+  return gulp.src('src/scss/materialize/materialize.scss')
+    .pipe(sass())
+    .pipe(header(banner, {
+      pkg: pkg
+    }))
+    .pipe(gulp.dest('src/vendor/materialize/css'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+});
+
+gulp.task('copy-mat-sass', function () {
+  gulp.src([
+    'node_modules/materialize-css/sass/**/*'
+  ])
+    .pipe(gulp.dest('src/scss/materialize'))
+})
+
+// Minify compiled CSS
+gulp.task('minify-css-mat', ['sass-mat'], function () {
+  return gulp.src('src/vendor/materialize/css/materialize.css')
+    .pipe(cleanCSS({
+      compatibility: 'ie8'
+    }))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('src/vendor/materialize/css'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+});
+
+
 // Default task
-gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy', 'copy-mat-sass']);
 
 // Configure the browserSync task
-gulp.task('browserSync', function() {
+gulp.task('browserSync', function () {
   browserSync.init({
     server: {
       baseDir: './src'
@@ -85,7 +122,7 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() {
+gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js', 'minify-css-mat'], function () {
   gulp.watch('src/scss/*.scss', ['sass']);
   gulp.watch('src/css/*.css', ['minify-css']);
   gulp.watch('src/js/*.js', ['minify-js']);
